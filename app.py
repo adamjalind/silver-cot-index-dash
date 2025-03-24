@@ -32,7 +32,7 @@ def fetch_cftc_data(contract_code, start_date, end_date, limit=5000):
 
     api_key = os.getenv('API_KEY')
     # Hämta data
-    results = client.get("api_key", where=query, order="report_date_as_yyyy_mm_dd", limit=limit)
+    results = client.get(api_key, where=query, order="report_date_as_yyyy_mm_dd", limit=limit)
 
     # Convert to DataFrame
     df = pd.DataFrame.from_records(results)
