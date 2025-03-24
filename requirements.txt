@@ -4,3 +4,4 @@ sodapy
 dash
 plotly
 matplotlib
+pyarrow
