@@ -303,7 +303,7 @@ def create_dashboard(df, run=True):
         app.run_server(debug=True)
     return app
     
-
+final_df = load_or_update_data(force_update=True)
 
 # %%
 my_app = create_dashboard(final_df, run=False)
