@@ -302,10 +302,14 @@ def create_dashboard(df, run=True):
         app.run_server(debug=True)
     return app
     
-final_df = load_or_update_data(force_update=True)
+if __name__ == "__main__":
+    print("🔁 Checking data freshness and loading dashboard...")
+    
+    # Download Data
+    final_df = load_or_update_data()
 
-# %%
-my_app = create_dashboard(final_df, run=False)
-my_app.run_server(debug=True)
+    # Start Dash
+    my_app = create_dashboard(final_df)
+    my_app.run_server(debug=True)
 
 
