@@ -1,0 +1,5 @@
+pandas
+yfinance
+sodapy
+dash
+plotly
