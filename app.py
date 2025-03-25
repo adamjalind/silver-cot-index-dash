@@ -313,4 +313,5 @@ final_df = load_or_update_data()
 
 if __name__ == '__main__':
     my_app = create_dashboard(final_df, run=False)
-    my_app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    app.run(debug=True, host="0.0.0.0", port=port)
