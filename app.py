@@ -306,11 +306,11 @@ def create_dashboard(df, run=True):
     })
     
     if run:
-        app.run_server(debug=True)
+        app.run(debug=True)
     return app
 
 final_df = load_or_update_data()
 
 if __name__ == '__main__':
     my_app = create_dashboard(final_df, run=False)
-    my_app.run_server(debug=True)
+    my_app.run(debug=True)
