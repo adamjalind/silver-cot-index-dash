@@ -2,6 +2,8 @@
 
 A web-based dashboard to visualize the Commitments of Traders (COT) Index for Silver futures, using CFTC data and silver prices via Yahoo Finance.
 
+https://cot-index-for-silver-non-commercial.onrender.com/
+
 ## Features
 - Automatically fetches and caches COT and silver price data
 - Updates data no more than every 4 hours to minimize API usage
